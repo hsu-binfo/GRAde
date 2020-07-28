@@ -21,8 +21,3 @@ python GRAdetection.py
 ```
 <br><br>
 July 2020
-<br>
-Developer: Chia-Lang Hsu
-<br>
-Contributor: Yi-Hsuan Hung
-<br>
