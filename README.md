@@ -1,5 +1,6 @@
 # GRAde
-GRA detection pipeline
-
-Developer: Chia-Lang Hsu
+GRA detection pipeline<br>
+July 2020
+<br><br>
+Developer: Chia-Lang Hsu<br>
 Contributor: Yi-Hsuan Hung
