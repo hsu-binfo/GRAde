@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "edit_read": "edit_read.py",
+	  "aligner": "read_multialigner.py",
+	  "fusionPlot": "typing_plot_4k.R"
+  },
+  "db": {
+    "genome": "chr8.fa",
+	  "mmi_index": "chr8.mmi",
+    "bed": "cyp_region.bed",
+    "cyp11b1": "CYP11B1_4k.fasta",
+    "cyp11b2": "CYP11B2_4k.fasta",
+	  "blackList": "blackpoistion.txt"
+  },
+  "software": {
+    "[Example]":"/path/to/software",
+    "samtools": "samtools",
+    "ngmlr": "ngmlr",
+    "bedtools": "bedtools",
+    "canu": "canu",
+    "minimap2": "minimap2",
+    "ssw_test": "ssw_test"
+  }
+}
