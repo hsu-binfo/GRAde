@@ -10,10 +10,14 @@ Then, install GRAde dependencies with the following command
 ```
 conda env create -n GRAde --file environment.yml
 ```
-<br><br>
 Done!
 <br><br>
 
+## Test your installation
+```
+python GRAdetection.py 
+```
+<br><br>
 July 2020
 <br><br>
 Developer: Chia-Lang Hsu<br>
