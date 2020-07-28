@@ -2,7 +2,7 @@
 A GRA detection pipeline
 
 ## Install GRAde via miniconda
-First, install miniconda. The official instructions of miniconda: https://conda.io/projects/conda/en/latest/user-guide/install/index.html
+First, install miniconda. The official instructions of miniconda: https://conda.io/projects/conda/en/latest/user-guide/install/index.html <br>
 Then, install GRAde dependencies with the following command
 ```
 conda env create -n GRAde --file environment.yml
