@@ -1,1 +1,2 @@
 # GRAde
+GRA detection pipeline
