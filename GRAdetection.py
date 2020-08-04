@@ -102,7 +102,6 @@ class GARdetection():
 		#correct reads
 		template = """${canu} -correct -p ${samplename} -d ${outdir} \
 			genomeSize=5k overlapper=mhap utgReAlign=true stopOnReadQuality=false \
-			stopOnLowCoverage=10 \
 			-nanopore-raw ${fq}"""
 
 		command = string.Template(template).safe_substitute({
