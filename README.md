@@ -10,7 +10,7 @@ git lfs clone https://this/repository.git
 ```
 
 ## Install GRAde via miniconda
-If you have miniconda or anaconda installed, skip this step.
+If you have miniconda or anaconda installed, you can skip this step.
 <br>
 Install miniconda: https://conda.io/projects/conda/en/latest/user-guide/install/index.html 
 <br>
