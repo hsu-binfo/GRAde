@@ -16,6 +16,7 @@ Install miniconda: https://conda.io/projects/conda/en/latest/user-guide/install/
 <br>
 Install GRAde dependencies with the following command
 ```
+cd GRAde
 conda env create -n GRAde --file environment.yml
 ```
 Done!
