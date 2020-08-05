@@ -1,6 +1,13 @@
 # GRAde
 A GRA detection pipeline
 
+## Clone GRAde via Git Large File Storage (LFS) 
+Install Git Large File Storage: https://git-lfs.github.com/
+```
+git lfs install
+git lfs clone https://this/repository.git
+```
+
 ## Install GRAde via miniconda
 First, install miniconda. 
 <br>
