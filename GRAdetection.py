@@ -92,7 +92,7 @@ class GARdetection():
 			"bedtools": self.config["software"]["bedtools"]
 			})
 
-		subprocess.check_call(command, shell = True)
+		subprocess.call(command, shell = True)
 
 		#os.remove(tempBam)
 		#os.remove(tempBam + ".bai")
@@ -111,7 +111,7 @@ class GARdetection():
 			"canu": self.config["software"]["canu"]
 			})
 		print("[COMMEND]",command)
-		subprocess.check_call(command, shell = True)
+		subprocess.call(command, shell = True)
 
 		corrected = self.outdir + "/" + self.samplename + ".correctedReads.fasta.gz"
 		return corrected
@@ -130,9 +130,9 @@ class GARdetection():
 			"samtools": self.config["software"]["samtools"]
 			})
 		print(command)
-		subprocess.check_call(command, shell = True)
+		subprocess.call(command, shell = True)
 		## index temp bam file
-		subprocess.check_call("samtools index %s" % outfile, shell = True)
+		subprocess.call("samtools index %s" % outfile, shell = True)
 
 		return outfile
 
@@ -150,9 +150,9 @@ class GARdetection():
 			"samtools": self.config["software"]["samtools"]
 			})
 		print(command)
-		subprocess.check_call(command, shell = True)
+		subprocess.call(command, shell = True)
 		## index temp bam file
-		subprocess.check_call("samtools index %s" % outfile, shell = True)
+		subprocess.call("samtools index %s" % outfile, shell = True)
 
 		return outfile
 
@@ -184,7 +184,7 @@ class GARdetection():
 					b2 = self.ssw(fa1, os.path.join(self.db, self.config["db"]["cyp11b2"]), os.path.join(aln1Dir, "read."+str(tempID)+".b2.aln"))
 
 					run_read_edit = """%s %s %s > %s""" % (os.path.join(self.scripts, self.config["scripts"]["edit_read"]), b1, b2, fa2)
-					subprocess.check_call(run_read_edit, shell = True)
+					subprocess.call(run_read_edit, shell = True)
 
 					b1 = self.ssw(fa2, os.path.join(self.db, self.config["db"]["cyp11b1"]), os.path.join(aln2Dir, "read."+str(tempID)+".b1.aln"))
 					b2 = self.ssw(fa2, os.path.join(self.db, self.config["db"]["cyp11b2"]), os.path.join(aln2Dir, "read."+str(tempID)+".b2.aln"))
@@ -193,10 +193,10 @@ class GARdetection():
 					tempID += 1
 
 		run_multialigner = """%s %s > %s""" % (os.path.join(self.scripts, self.config["scripts"]["aligner"]), aln2Dir, outfile)
-		subprocess.check_call(run_multialigner, shell = True)
+		subprocess.call(run_multialigner, shell = True)
 		run_funsion_plot = """Rscript %s -f %s -o %s -s %s -b %s""" \
 			% (os.path.join(self.scripts, self.config["scripts"]["fusionPlot"]), outfile, self.outdir, self.samplename, os.path.join(self.db, self.config["db"]["blackList"]))
-		subprocess.check_call(run_funsion_plot, shell = True)
+		subprocess.call(run_funsion_plot, shell = True)
 		os.system('rm -rf %s' % tempDir)
 
 	def ssw(self, fa, ref, out):
@@ -214,8 +214,8 @@ class GARdetection():
 
 	def fqTofa(self, fq):
 		fa = os.path.join(self.outdir, self.samplename + ".filtered.fasta")
-		subprocess.check_call("sed -n '1~4s/^@/>/p;2~4p' %s > %s" % (fq, fa), shell = True)
-		subprocess.check_call("gzip %s" % fa, shell = True)
+		subprocess.call("sed -n '1~4s/^@/>/p;2~4p' %s > %s" % (fq, fa), shell = True)
+		subprocess.call("gzip %s" % fa, shell = True)
 
 		outfile = fa + ".gz"
 		return(outfile)
