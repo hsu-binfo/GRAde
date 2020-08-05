@@ -13,13 +13,13 @@ If you have miniconda or anaconda installed, skip this step.
 <br>
 Install miniconda: https://conda.io/projects/conda/en/latest/user-guide/install/index.html 
 <br>
+<br>
 Install GRAde dependencies with the following command
 ```
 conda env create -n GRAde --file environment.yml
 ```
 Done!
-<br><br>
-
+<br>
 ## Test your installation
 ```
 python GRAdetection.py 
