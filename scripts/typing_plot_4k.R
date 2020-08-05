@@ -1,4 +1,3 @@
-#!/home/chialanghsu/miniconda2/bin/Rscript
 options(stringsAsFactors = FALSE)
 library(optparse)
 library(dplyr)
