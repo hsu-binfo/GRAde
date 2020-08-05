@@ -4,6 +4,7 @@ A GRA detection pipeline
 ## Clone GRAde via Git Large File Storage (LFS) 
 Install Git Large File Storage: https://git-lfs.github.com/
 ```
+sudo apt-get install git-lfs 
 git lfs install
 git lfs clone https://this/repository.git
 ```
