@@ -18,6 +18,7 @@ Install GRAde dependencies with the following command
 ```
 cd GRAde
 conda env create -n GRAde --file environment.yml
+conda activate GRAde
 ```
 Done!
 <br>
