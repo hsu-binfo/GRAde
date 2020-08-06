@@ -5,8 +5,7 @@ A GRA detection pipeline
 Install Git Large File Storage: https://git-lfs.github.com/
 ```
 sudo apt-get install git-lfs 
-git lfs install
-git lfs clone https://this/repository.git
+git clone https://github.com/yihsuanhung/GRAde.git
 ```
 
 ## Install GRAde via miniconda
