@@ -5,7 +5,7 @@ A GRA detection pipeline
 Install Git Large File Storage: https://git-lfs.github.com/
 ```
 sudo apt-get install git-lfs 
-# or
+# or install with conda
 conda install -c conda-forge git-lfs
 ```
 Clone this repository
