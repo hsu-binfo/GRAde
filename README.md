@@ -5,6 +5,10 @@ A GRA detection pipeline
 Install Git Large File Storage: https://git-lfs.github.com/
 ```
 sudo apt-get install git-lfs 
+# or
+conda install -c conda-forge git-lfs
+```
+```
 git clone https://github.com/yihsuanhung/GRAde.git
 ```
 
