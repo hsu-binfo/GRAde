@@ -10,7 +10,7 @@ conda install -c conda-forge git-lfs
 ```
 Clone this repository
 ```
-git clone https://github.com/yihsuanhung/GRAde.git
+git clone https://github.com/hsu-binfo/GRAde.git
 ```
 
 ## Install GRAde via miniconda
