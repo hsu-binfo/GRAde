@@ -30,7 +30,13 @@ Done!
 ## Test your installation
 ```
 python GRAdetection.py 
-python GRAdetection.py --fastq example/example1.fastq.gz --outdir /path/to/output/data/ --samplename GRAtesting
 ```
+
+## Usage
+```
+python GRAdetection.py --fastq example/example1.fastq.gz --outdir /path/to/output/dir/ --samplename GRAtesting
+```
+
+
 <br><br>
 July 2020
