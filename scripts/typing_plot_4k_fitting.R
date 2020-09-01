@@ -1,6 +1,5 @@
-#!/home/chialanghsu/miniconda2/bin/Rscript
 options(stringsAsFactors = FALSE)
-# library(optparse)
+library(optparse)
 library(dplyr)
 library(magrittr)
 library(drc)
@@ -126,8 +125,8 @@ separate <- function(data, gene, plot=TRUE){
 
   if (plot) {
     abline(v=(max_pos+max_pos_1)/2, lty = 2, col = "grey30")
-    legend(plot_location, paste('chr8:', sep_position, "-", sep_position_1, sep=""),
-			bty = "n", cex = 0.7, inset = c(-0.01, 0.01))
+    # legend(plot_location, paste('chr8:', sep_position, "-", sep_position_1, sep=""),
+	# 		bty = "n", cex = 0.7, inset = c(-0.01, 0.01))
   }
 }
 

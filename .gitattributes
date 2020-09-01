@@ -1,5 +1,5 @@
-example/N1082310_S64_NB09_20191015.fastq.gz filter=lfs diff=lfs merge=lfs -text
-example/test.fastq filter=lfs diff=lfs merge=lfs -text
+example/example1.fastq.gz filter=lfs diff=lfs merge=lfs -text
+example/example2.fastq filter=lfs diff=lfs merge=lfs -text
 db/blackpoistion.txt filter=lfs diff=lfs merge=lfs -text
 db/chr8.fa-enc.2.ngm filter=lfs diff=lfs merge=lfs -text
 db/chr8.mmi filter=lfs diff=lfs merge=lfs -text

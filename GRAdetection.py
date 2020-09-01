@@ -183,7 +183,7 @@ class GARdetection():
 					b1 = self.ssw(fa1, os.path.join(self.db, self.config["db"]["cyp11b1"]), os.path.join(aln1Dir, "read."+str(tempID)+".b1.aln"))
 					b2 = self.ssw(fa1, os.path.join(self.db, self.config["db"]["cyp11b2"]), os.path.join(aln1Dir, "read."+str(tempID)+".b2.aln"))
 
-					run_read_edit = """%s %s %s > %s""" % (os.path.join(self.scripts, self.config["scripts"]["edit_read"]), b1, b2, fa2)
+					run_read_edit = """python %s %s %s > %s""" % (os.path.join(self.scripts, self.config["scripts"]["edit_read"]), b1, b2, fa2)
 					subprocess.check_call(run_read_edit, shell = True)
 
 					b1 = self.ssw(fa2, os.path.join(self.db, self.config["db"]["cyp11b1"]), os.path.join(aln2Dir, "read."+str(tempID)+".b1.aln"))
@@ -192,7 +192,7 @@ class GARdetection():
 					lines = []
 					tempID += 1
 
-		run_multialigner = """%s %s > %s""" % (os.path.join(self.scripts, self.config["scripts"]["aligner"]), aln2Dir, outfile)
+		run_multialigner = """python %s %s > %s""" % (os.path.join(self.scripts, self.config["scripts"]["aligner"]), aln2Dir, outfile)
 		subprocess.check_call(run_multialigner, shell = True)
 		run_funsion_plot = """Rscript %s -f %s -o %s -s %s -b %s""" \
 			% (os.path.join(self.scripts, self.config["scripts"]["fusionPlot"]), outfile, self.outdir, self.samplename, os.path.join(self.db, self.config["db"]["blackList"]))
