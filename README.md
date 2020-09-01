@@ -8,6 +8,7 @@ sudo apt-get install git-lfs
 # or
 conda install -c conda-forge git-lfs
 ```
+Clone this repository
 ```
 git clone https://github.com/yihsuanhung/GRAde.git
 ```
