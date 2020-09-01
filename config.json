@@ -2,7 +2,7 @@
   "scripts": {
     "edit_read": "edit_read.py",
 	  "aligner": "read_multialigner.py",
-	  "fusionPlot": "typing_plot_4k.R"
+	  "fusionPlot": "typing_plot_4k_fitting.R"
   },
   "db": {
     "genome": "chr8.fa",
