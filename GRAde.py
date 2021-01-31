@@ -12,7 +12,7 @@ import string
 import gzip
 
 #class mMinION(Common):
-class GARdetection():
+class GARde():
     #__metaclass__ = MetaClass
     #base = declarative_base()
 	def __init__(self, args, path):
@@ -242,7 +242,7 @@ def main():
 	if not os.path.exists(args.outdir):
 		os.makedirs(args.outdir)
 
-	m = GARdetection(args, toolDir)
+	m = GARde(args, toolDir)
 	fq = m.filter()
 
 	if args.skipCorrection:
